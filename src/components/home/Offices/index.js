@@ -45,7 +45,7 @@ const arrOffices = [
     content: 'オーストラリアに置ける事務所の代表者 ',
     leader: 'Ngo Danny 博士',
     fullContent:
-      'Dr. Danny Ngo has 14 years of R&D experience in Oceania and North America, having established himself as an international expert in the domain of the Internet of Things, 5G/6G telecommunications systems, and intelligent transportation. He has collaborated with the world’s largest corporations in the telecommunications industry in several key R&D projects. At Napa Global, he is a principal technology advisor and a VP leading the market development efforts in Australia and New Zealand. He continues to bring his expert knowledge of advanced engineering and technology into the software and systems design process.'
+      'Danny Ngo博士は、オセアニアと北米で14年間の研究開発経験を持ち、Internet of things （モノのインターネット）、5G・6G 通信システム、インテリジェント・トランスポーテーションの領域で国際的な専門家としての地位を確立しています。また、通信業界の世界的な大企業と協力して、いくつかの重要な研究開発プロジェクト（R&D projects）に携わってきました。Napa Globalでは、主要技術アドバイザーであるとともに、オーストラリアとニュージーランドでの市場開拓をリードする副社長を務めています。彼は、高度なエンジニアリングとテクノロジーに関する専門知識を、ソフトウェアとシステムの設計プロセスに活かし続けている。'
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const arrOffices = [
     content: 'アメリカに置ける事務所の代表者 ',
     leader: 'Ms. Kimberly Bui',
     fullContent:
-      'Kimberly Bui is an expert in state-of-the-art technologies and business strategies. She has advised entrepreneurs from startups and executive business leaders from multi-national corporations on a wide range of technologies in AI, robotics, e-commerce, and financial services to meet their business needs. At NAPA Global, Kimberly provides valuable guidance for our development teams to best serve different types of clients.'
+      'Kimberly Buiは、最先端のテクノロジーとビジネス戦略のエキスパートです。彼女は、スタートアップ企業の起業家や多国籍企業のエグゼクティブビジネスリーダーに、AI、ロボット、Eコマース、金融サービスなどの幅広い技術について、ビジネスニーズに合わせたアドバイスを行っています。NAPA Globalでは、Kimberly は、開発チームがさまざまなクライアントのタイプに最適なサービスを提供できるよう、貴重な指導を行っています。'
   },
   {
     id: 5,
