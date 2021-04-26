@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   background-color: #fff;
+  letter-spacing: 1px;
 }
 
 .slick-slider div {

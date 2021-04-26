@@ -74,7 +74,7 @@
 }
 
 .root:hover::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   bottom: -10px;
@@ -139,6 +139,10 @@
   height: 100%;
   position: absolute;
   top: 0;
+}
+
+.description {
+  font-size: 17px;
 }
 
 @media only screen and (max-width: 800px) {
