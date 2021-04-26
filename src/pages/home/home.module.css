@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.wrapOffice {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .root {
+    padding: 0 15px;
+    width: auto;
+  }
+}
+
+/* @media only screen and (max-width: 800px) {
+  .wrapOffice {
+    display: none;
+  }
+} */

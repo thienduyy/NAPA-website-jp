@@ -1,0 +1,17 @@
+.root {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapConsultation {
+  padding-top: 100px;
+}
+@media only screen and (max-width: 800px) {
+  .root {
+    margin: 0 12px;
+    width: auto;
+  }
+}

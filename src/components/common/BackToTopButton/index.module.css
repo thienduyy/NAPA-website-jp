@@ -1,0 +1,50 @@
+.root {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  min-width: unset;
+  min-height: unset;
+  width: 50px !important;
+  height: 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(150%);
+  transition: all 0.2s ease-in-out;
+  z-index: 99999;
+}
+
+.arrow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.arrow::after,
+.arrow::before {
+  content: '';
+  top: 50%;
+  position: absolute;
+  width: 0.8rem;
+  height: 0.15rem;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.arrow::after {
+  right: 6.5px;
+  transform: translate(0%, -50%) rotate(-45deg);
+}
+.arrow::before {
+  left: 6.5px;
+  transform: translate(0%, -50%) rotate(45deg);
+}
+
+.root:hover {
+  filter: brightness(80%);
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0px);
+}

@@ -1,0 +1,8 @@
+@media only screen and (max-width: 800px) {
+  .avatar{
+    height: 120px;
+  }
+  .slick-initialized .slick-slide {
+    width: 100px !important;
+  }
+}

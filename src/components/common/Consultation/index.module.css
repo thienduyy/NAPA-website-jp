@@ -1,0 +1,244 @@
+.root {
+    display: flex;
+    padding: 0 0 100px 0;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapContent {
+    max-width: 85%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.consutation {
+    position: absolute;
+    top: -150px;
+}
+
+.wrapText {
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 55px;
+    margin: 0 0 25px 0;
+    color: #17242b;
+}
+
+.title p {
+    margin: 0;
+}
+
+.subTitle {
+    font-size: 22px;
+    font-weight: lighter;
+    margin: 0;
+    line-height: 1.3;
+    flex: 1 1;
+    color: #6d7c84;
+}
+
+.wrapForm {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.form {
+    border-radius: 12px;
+    box-shadow: 4px 8px 35px #ebebeb;
+    margin-left: 30px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    width: calc(50% - 16px);
+    margin-right: 16px;
+    display: flex;
+}
+
+.email {
+    width: calc(50% - 16px);
+    margin-left: 16px;
+    display: flex;
+}
+
+.form1 {
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0px 3px 10px #00000017;
+}
+
+.form1::placeholder,
+.message::placeholder {
+    font-size: 16px;
+    color: #17242b;
+    opacity: 0.32;
+}
+
+.message {
+    resize: none;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px 25px;
+    box-shadow: 0px 3px 10px #00000017;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: unset;
+}
+
+.secondRow {
+    margin-top: 35px;
+    display: flex;
+}
+
+.wrapBtn {
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    color: var(--pink);
+    transition: all 500ms ease;
+    opacity: 0;
+}
+
+.textTrst {
+    /* margin-right: -160px; */
+    opacity: 1;
+}
+
+.btnSubmit {
+    width: 190px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background: transparent linear-gradient(116deg, #d91ed4 0%, #6d3fee 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -5px;
+}
+
+.contactInfo>span {
+    text-decoration: underline;
+    color: #92278f;
+    font-size: 20px;
+    margin: 0;
+}
+
+.contactInfo>span:first-child {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .root {
+        width: auto;
+        padding: 0 0 100px 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .root {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 55px 0 80px;
+    }
+    .wrapText {
+        width: 100%;
+        text-align: center;
+    }
+    .title {
+        font-size: 20px;
+        margin: 0 0 15px 0;
+    }
+    .subTitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    .contactInfo span {
+        font-size: 14px;
+    }
+    .contactInfo span:first-child {
+        margin-bottom: 5px;
+    }
+    .form {
+        width: 100%;
+        margin-left: 0;
+        box-shadow: 4px 3px 9px #ebebeb;
+        margin-top: 35px;
+        max-width: 100%;
+        padding: 20px 17px;
+    }
+    .wrapForm {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+    }
+    .name,
+    .info {
+        width: 50%;
+    }
+    .form1,
+    .message {
+        border-radius: 6px;
+        padding: 10px 25px;
+    }
+    .secondRow,
+    .wrapBtn {
+        margin-top: 18px;
+    }
+    .wrapBtn button {
+        min-height: 28px;
+        min-width: 87px;
+        font-size: 12px;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .email {
+        margin-left: -5px;
+    }
+    .wrapContent {
+        flex-direction: column;
+      }
+}
+
+@media only screen and (max-width: 414px) {
+    .root {
+        margin: 60px 0;
+    }
+    .wrapContent{
+        flex-direction: column;
+        width: 100%;
+    }
+}

@@ -1,0 +1,139 @@
+.root {
+  width: 100%;
+  display: flex;
+  margin: 20px 0;
+}
+
+.root:hover {
+  cursor: pointer;
+}
+
+.img {
+  width: 410px;
+  height: 360px;
+}
+
+.wrapInfo {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  flex: 1;
+}
+
+.wrapField {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.field {
+  padding: 4px 16px;
+  border: 1px solid #36b6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.field > span {
+  color: #36b6ff;
+}
+
+.projectName {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  margin: 6px 0;
+}
+
+.leftInfo {
+  width: 25%;
+}
+
+.leftInfo > span {
+  color: #717695;
+  font-size: 14px;
+}
+
+.rightInfo {
+  width: 75%;
+  display: flex;
+}
+
+.rightInfo > span {
+  font-size: 14px;
+}
+
+.wrapListInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapTech {
+  display: flex;
+  align-items: center;
+}
+
+.iconTech {
+  width: 20px;
+  height: 20px;
+}
+
+.techName {
+  margin-left: 8px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.link {
+  text-decoration: none;
+  color: #0cb7ed;
+}
+
+.description {
+  width: 100%;
+  margin: 6px 0;
+}
+
+.description > span {
+  color: #717695;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+  .techName {
+    margin-right: 10px;
+  }
+
+  .root {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapInfo {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .wrapInfo {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 414px) {
+  .wrapInfo {
+    margin-left: 0px;
+  }
+}

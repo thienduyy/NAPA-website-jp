@@ -1,0 +1,48 @@
+:root {
+  --purple: #8354ef;
+  --pink: #dd38d9;
+  
+}
+
+.root {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  min-height: 48px;
+  min-width: 160px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: inherit;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.root:active {
+  box-shadow: none;
+}
+
+.root::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80%;
+  width: 85%;
+  border-radius: 50px;
+  background: inherit;
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+}
+
+.disabled {
+  background-image: unset;
+  color: #cdcccc;
+  cursor: unset;
+}
