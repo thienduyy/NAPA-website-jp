@@ -1,5 +1,6 @@
 import styles from './serviceBlock.module.css';
 import parser from 'html-react-parser';
+import classes from './serviceBlock.module.css';
 
 const ServiceBlock = (service) => {
   const parse2 = (text, placeholder) =>
@@ -21,7 +22,9 @@ const ServiceBlock = (service) => {
         />
       </div>
       <h2>{parse2(!service.loading && service?.fullName)}</h2>
-      <p>{parse2(!service.loading && service?.description)}</p>
+      <p className={styles.description}>
+        {parse2(!service.loading && service?.description)}
+      </p>
     </div>
   );
 };
