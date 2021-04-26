@@ -1,0 +1,208 @@
+.imgAI,
+.imgDB,
+.imgChat,
+.imgRobot,
+.imgPhone,
+.imgShadow {
+  position: absolute;
+  height: auto;
+}
+
+.imgAI {
+  bottom: 15%;
+  width: 25%;
+  left: 40%;
+  opacity: 0;
+  animation: slideInBottom 1s 1.5s ease-in-out alternate,
+    up 2s 2500ms ease infinite alternate;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.imgShadow {
+  width: 25%;
+  left: 40%;
+  bottom: 12%;
+  opacity: 0;
+  animation: show 1s 1.5s ease-in-out alternate;
+  animation-fill-mode: forwards;
+}
+
+.imgDB {
+  width: 20%;
+  bottom: 25%;
+  right: 10%;
+  opacity: 0;
+  animation: slideInTopLeft 1.5s 2.5s ease-in-out alternate,
+    up 2.5s 2500ms ease infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+.imgChat {
+  width: 20%;
+  bottom: 20%;
+  left: 18%;
+  opacity: 0;
+  animation: slideInBottomRight 1.5s 2.5s ease-in-out alternate,
+    up 2.75s 2500ms ease infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+.imgRobot {
+  width: 20%;
+  bottom: 5%;
+  right: 20%;
+  opacity: 0;
+  animation: slideInBottomLeft 1.5s 2.5s ease-in-out alternate,
+    up 3s 2500ms ease infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+.imgPhone {
+  width: 20%;
+  bottom: 0px;
+  left: 25%;
+  opacity: 0;
+  animation: slideInBottomLeft 1.5s 2.5s ease-in-out alternate,
+    up 3.25s 2500ms ease infinite alternate;
+  animation-fill-mode: forwards;
+}
+@media only screen and (max-height: 415px) {
+  .imgAI {
+    width: 25% !important;
+  }
+  .imgDB,
+  .imgChat,
+  .imgPhone,
+  .imgRobot {
+    width: 20% !important;
+  }
+  .phoneImage {
+    bottom: -60px !important;
+  }
+  .imgRobot {
+    right: 20% !important;
+  }
+  .imgPhone {
+    left: 20% !important;
+  }
+  .imgDB {
+    right: 10% !important;
+  }
+  .imgChat {
+    left: 10% !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .imgAI {
+    width: 50%;
+    left: unset;
+  }
+  .imgShadow {
+    width: 50%;
+    left: unset;
+    bottom: 18%;
+  }
+  .imgDB {
+    width: 40%;
+    bottom: 30%;
+    right: 0;
+  }
+  .imgChat {
+    width: 40%;
+    bottom: 30%;
+    left: 0;
+  }
+  .imgRobot {
+    width: 40%;
+    bottom: 8%;
+    right: 5%;
+  }
+  .imgPhone {
+    width: 40%;
+    bottom: 5%;
+    left: 5%;
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTopLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(70px, -70px);
+    transform: translate(70px, -70px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottomLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(100px, 100px);
+    transform: translate(100px, 100px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottomRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-100px, -100px);
+    transform: translate(-100px, -100px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  to {
+    transform: translate(0, -25px);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,181 @@
+.root {
+  width: 100%;
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderBox {
+  width: 100%;
+}
+
+.subtitle {
+  color: #29354a;
+  font-size: 26px;
+  margin: 0 0 60px 0;
+  font-weight: normal;
+}
+
+.title {
+  color: #29354a;
+  font-size: 55px;
+  margin: 0 0 25px 0;
+}
+
+.nextArrow,
+.prevArrow {
+  width: 70px !important;
+  height: 50px !important;
+  border-radius: 50px;
+  box-shadow: 0px 4px 6px #00000026;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s;
+}
+
+.nextArrow:hover,
+.prevArrow:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.nextArrow:focus,
+.prevArrow:focus,
+.nextArrow:active,
+.prevArrow:active {
+  box-shadow: none;
+}
+
+.nextArrow::before,
+.prevArrow::before {
+  content: unset !important;
+}
+
+.prevArrow {
+  left: -100px !important;
+}
+
+.nextArrow {
+  right: -100px !important;
+}
+
+.nextArrowIcon,
+.prevArrowIcon {
+  width: 20px;
+  height: 2px;
+  background: #666666;
+  position: relative;
+}
+
+.nextArrowIcon {
+  transform: rotate(180deg);
+}
+
+.nextArrowIcon::after,
+.prevArrowIcon::after,
+.nextArrowIcon::before,
+.prevArrowIcon::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 2px;
+  left: -2px;
+  background: inherit;
+}
+
+.nextArrowIcon::after,
+.prevArrowIcon::after {
+  top: -2px;
+  transform: rotate(-45deg);
+}
+
+.nextArrowIcon::before,
+.prevArrowIcon::before {
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.nextHalfCircle,
+.prevHalfCircle {
+  position: absolute;
+  width: 32px;
+  height: 66px; /* as the half of the width */
+  border: 4px solid #e5e1d9;
+}
+
+.nextHalfCircle {
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-bottom-left-radius: 110px; /* 100px of height + 10px of border */
+  border-right: 0;
+  right: 45px;
+}
+
+.prevHalfCircle {
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
+  border-left: 0;
+  left: 45px;
+}
+@media only screen and (max-width: 1200px) {
+  .root,
+  .container {
+    width: 100%;
+  }
+  .prevArrow {
+    left: -35px !important;
+    z-index: 2;
+  }
+  .nextArrow {
+    right: -35px !important;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .root {
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  .title {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+  .subtitle {
+    font-size: 14px;
+    margin: 0 0 30px 0;
+  }
+  .prevHalfCircle,
+  .nextHalfCircle {
+    display: none;
+  }
+  .prevArrowIcon {
+    font-size: 20px;
+  }
+  .prevArrow {
+    left: -12px !important;
+  }
+  .nextArrow {
+    right: -12px !important;
+  }
+  .nextArrow,
+  .prevArrow {
+    width: 50px !important;
+    height: 30px !important;
+    z-index: 9;
+  }
+  .quoteIcon {
+    width: 35px;
+    height: 35px;
+  }
+  .sliderBox {
+    width: 100%;
+  }
+}

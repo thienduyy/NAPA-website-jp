@@ -1,0 +1,180 @@
+.phoneImage {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 270px);
+  z-index: 1;
+  width: 600px;
+  height: 370px;
+  background-image: url('../../../../assets/images/home/banner-3/mobile-01.svg');
+  background-repeat: no-repeat;
+}
+
+.firstContent {
+  position: absolute;
+  width: 385px;
+  height: 225px;
+  bottom: 70px;
+  left: calc(50% - 350px);
+  z-index: 2;
+  background-image: url('../../../../assets/images/home/banner-3/card 2-01.svg');
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.secondContent {
+  position: absolute;
+  width: 385px;
+  height: 225px;
+  bottom: 225px;
+  left: calc(50% - 200px);
+  z-index: 3;
+  background-image: url('../../../../assets/images/home/banner-3/card 1-01.svg');
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.slideInBottom {
+  animation: slideInBottomAnimate 1s ease-in-out;
+}
+
+.slideInBR {
+  /* animation: slideInBottomRightAnimate 1s ease-in-out; */
+  animation-delay: 1s;
+  animation: slideInBottomRightAnimate 1s 1.5s 1 ease,
+    up 2s 2500ms ease infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+.slideInTL {
+  /* animation: slideInTopLeftAnimate 1s ease-in-out; */
+  animation-delay: 2s;
+  animation: slideInTopLeftAnimate 0.7s 1s 1 ease,
+    up 2s 3500ms ease infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .secondContent {
+    width: 100%;
+    height: 18%;
+    left: 45%;
+    bottom: 27%;
+  }
+
+  .firstContent {
+    width: 100%;
+    height: 22%;
+    bottom: 12%;
+    left: 33%;
+  }
+
+  .phoneImage {
+    position: absolute;
+    bottom: 40px;
+    left: 34%;
+    width: 100%;
+    height: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .phoneImage {
+    bottom: 30px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 250px;
+  }
+
+  .firstContent {
+    width: 185px;
+    height: 150px;
+    bottom: 70px;
+    left: calc(50% - 185px);
+  }
+
+  .secondContent {
+    width: 185px;
+    height: 150px;
+    bottom: 135px;
+    left: calc(50% - 120px);
+  }
+}
+
+@media only screen and (max-height: 415px) {
+  .firstContent {
+    bottom: -7%;
+    width: 150px;
+    left: calc(50% - 170px);
+  }
+
+  .secondContent {
+    width: 150px;
+    height: 150px;
+    bottom: 7%;
+    left: calc(50% - 70px);
+  }
+
+  .phoneImage {
+    bottom: -25%;
+    width: 250px;
+  }
+}
+
+@keyframes slideInBottomAnimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1080px);
+    transform: translateY(1080px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottomRightAnimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(356px, 189px);
+    transform: translate(356px, 189px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTopLeftAnimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-500px, -287px);
+    transform: translate(-500px, -287px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  to {
+    transform: translate(0, -10px);
+  }
+}

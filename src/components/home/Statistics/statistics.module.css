@@ -1,0 +1,120 @@
+:root {
+  --purple: #8354ef;
+  --pink: #dd38d9;
+  --zIndexEle: 5;
+  --zIndexCircleBasic: 1;
+}
+
+.root {
+  display: flex;
+  width: 1280px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  border-radius: 20px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box label {
+  font-size: 5rem;
+}
+
+.box h4 {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  color: #fff;
+  width: 85%;
+  margin: 80px 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: var(--zIndexEle);
+}
+
+.circleTopLeft,
+.circleBottomLeft,
+.circleTopRight,
+.circleBottomRight {
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.1);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+
+.circleTopLeft {
+  top: -24%;
+  left: -20%;
+  z-index: var(--zIndexCircleBasic);
+}
+
+.circleTopRight {
+  top: -25%;
+  right: -12%;
+  z-index: calc(var(--zIndexCircleBasic) + 1);
+}
+
+.circleBottomLeft {
+  bottom: -75%;
+  left: -27.5%;
+  z-index: calc(var(--zIndexCircleBasic) + 2);
+}
+
+.circleBottomRight {
+  width: 500px;
+  height: 500px;
+  bottom: -110%;
+  right: -2%;
+  z-index: calc(var(--zIndexCircleBasic) + 2);
+}
+.title {
+  opacity: 0.71;
+  font-size: 18px !important;
+}
+@media only screen and (max-width: 1200px) {
+  .root {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .circleTopLeft,
+  .circleTopRight,
+  .circleBottomRight,
+  .circleBottomLeft {
+    display: none;
+  }
+  .root {
+    background-image: url("../../../assets/images/home/banner-number.jpg");
+    background-size: cover;
+    height: 100px !important;
+    max-width: 100%;
+    margin-bottom: 75px !important;
+    width: 100%;
+  }
+  .container {
+    width: 95%;
+  }
+  .box h4 {
+    font-size: 10px !important;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .box label {
+    font-size: 22px;
+  }
+}

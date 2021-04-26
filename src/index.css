@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'EuclidCircularA';
+  src: local('EuclidCircularA'),
+    url('fonts/EuclidCircularA-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  font-family: EuclidCircularA, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.slick-slider div {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}

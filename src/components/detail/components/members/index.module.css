@@ -1,0 +1,121 @@
+.root {
+  width: 100%;
+  padding-top: 140px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.half {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.subTitle {
+  color: #6d7c84;
+  font-size: 26px;
+  padding-right: 70px;
+}
+
+.halfChild {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.halfChild > span {
+  font-size: 20px;
+  color: #252d3a;
+  margin-bottom: 35px;
+}
+
+.listTeam {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item > img {
+  width: 55px;
+  height: 55px;
+}
+
+.wrapName {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.wrapName > h3 {
+  font-size: 22px;
+  color: #000;
+  margin: 5px 0;
+  font-weight: normal;
+  opacity: 0.87;
+}
+
+.wrapSkills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapSkills > span {
+  font-size: 18px;
+  color: #92278f;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 800px) {
+  .root {
+    padding: 70px 0 0 0;
+    width: auto;
+    flex-direction: column;
+  }
+  .half {
+    width: auto;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .title br {
+    display: none;
+  }
+  .subTitle {
+    padding-right: 0;
+    font-size: 12px;
+    margin: 18px 0 25px 0;
+  }
+  .halfChild span {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .item {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .wrapName {
+    margin-left: 10px;
+  }
+  .wrapName h3,
+  .halfChild span {
+    font-size: 13px;
+  }
+  .mt30 {
+    margin-top: 25px;
+  }
+}

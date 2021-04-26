@@ -1,0 +1,227 @@
+@media only screen and (max-width: 1200px) {
+  .root {
+    position: relative;
+  }
+
+  .VNDot,
+  .USDot,
+  .AUDot,
+  .JPDot {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-image: url("assets/images/home/location-sp.svg");
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+    /* visibility: hidden; */
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .VNDot::before,
+  .USDot::before,
+  .AUDot::before,
+  .JPDot::before {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+    background: #f443369e;
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: smallToBig 2s linear infinite;
+  }
+
+  @keyframes smallToBig {
+    33% {
+      transform: scale(1);
+    }
+
+    66% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+@media only screen and (width: 1024px) {
+  .root {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .root::after {
+    content: '';
+    background: #585d6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 95%;
+    position: absolute;
+    height: 100%;
+    top: -6%;
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  .root::before {
+    content: '';
+    background: #9297b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
+    position: absolute;
+    height: 100%;
+    top: -11%;
+    z-index: 1;
+    border-radius: 30px;
+  }
+
+  .background {
+    margin-bottom: -70px;
+    border-radius: 20px;
+    z-index: 2;
+    max-width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .VNDot {
+    top: 65%;
+    right: 18%;
+  }
+
+  .AUDot {
+    bottom: -4%;
+    right: 9%;
+  }
+
+  .USDot {
+    top: 72px;
+    left: 25%;
+  }
+
+  .JPDot {
+    right: 11%;
+    top: 42%;
+  }
+
+  .root {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .root::after {
+    content: '';
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 95%;
+    position: absolute;
+    height: 100%;
+    top: -6%;
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  .root::before {
+    content: '';
+    background: #eceff1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
+    position: absolute;
+    height: 100%;
+    top: -11%;
+    z-index: 1;
+    border-radius: 30px;
+  }
+
+  .background {
+    margin-bottom: -70px;
+    border-radius: 20px;
+    z-index: 2;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (width: 768px) {
+  .root {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .VNDot {
+    top: 60%;
+    right: 20%;
+  }
+
+  .AUDot {
+    top: 86%;
+    right: 9%;
+  }
+
+  .USDot {
+    top: 37%;
+    right: 27% !important;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  .root {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .VNDot {
+    top: 60%;
+    right: 20%;
+  }
+
+  .AUDot {
+    top: 86%;
+    right: 9%;
+  }
+
+  .USDot {
+    top: 37%;
+    left: 27% !important;
+  }
+
+  .JPDot {
+    right: 11%;
+    top: 42%;
+  }
+}
+
+@media only screen and (max-height: 414px) {
+  .root {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}

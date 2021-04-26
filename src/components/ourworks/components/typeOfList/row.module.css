@@ -1,0 +1,68 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 30px);
+  margin: 15px;
+  border-radius: 33px;
+  box-shadow: 7px 15px 26px #0000000d;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.root:hover {
+  box-shadow: 3px 3px 10px 1px #ccc;
+}
+
+.wrapImage span{
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+.wrapTitle {
+  width: 100%;
+  padding: 25px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectName {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 20px;
+  color: #5a6084;
+  margin: 10px 0;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 800px) {
+  .root {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .projectName {
+    font-size: 16px;
+    margin: 12px 0 10px 0;
+  }
+
+  .description {
+    font-size: 13px;
+    margin: 0 0 25px 0;
+  }
+
+  .wrapTitle {
+    padding: 0 25px;
+  }
+}
