@@ -58,7 +58,7 @@ function Team(props) {
   if (!ourTeam) return <div></div>;
   const data = [...formatData(ourTeam)];
   const parse2 = (text, placeholder) =>
-    loadingTeam ? placeholder ?? '' : parser(text?.['en'] ?? '');
+    loadingTeam ? placeholder ?? '' : parser(text?.['jp'] ?? '');
 
   const currentMember = data[selectedPer];
 
@@ -95,7 +95,7 @@ function Team(props) {
             <div className={clsx(styles.wrapImgSection, 'wow slideInLeft')}>
               {!loadingTeam &&
                 !errorTeam &&
-                ourTeam.team_name.map((entry, index) => (
+                ourTeam?.team_introduce?.map((entry, index) => (
                   <div
                     key={index}
                     className={clsx(
@@ -123,7 +123,7 @@ function Team(props) {
                 <LazyLoadImage
                   src={
                     !loadingTeam && !errorTeam
-                      ? ourTeam?.team_name[selectedPer]?.image.original
+                      ? ourTeam?.team_introduce[selectedPer]?.image.original
                       : undefined
                   }
                   className={styles.avatar}
