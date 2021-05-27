@@ -13,7 +13,7 @@ import LazyLoadImage from 'components/common/LazyLoadImage';
 function formatData(data) {
   if (!data) return;
 
-  const lang = 'en';
+  const lang = 'jp';
   const {
     team_name,
     team_role,
@@ -26,7 +26,7 @@ function formatData(data) {
   // console.log(team_role[0].language[lang])
   team_name.forEach((item, index) => {
     const obj = {
-      avatar: item.image.original,
+      avatar: team_introduce[index].image.original,
       name: item.language[lang],
       role: team_role[index] ? parser(team_role[index].language[lang]) : '',
       introduction: parser(team_introduce[index].language[lang]),
@@ -59,8 +59,7 @@ function Team(props) {
   const data = [...formatData(ourTeam)];
   const parse2 = (text, placeholder) =>
     loadingTeam ? placeholder ?? '' : parser(text?.['jp'] ?? '');
-
-  const currentMember = data[selectedPer];
+    const currentMember = data[selectedPer];
 
   const clickCurrentMember = (direction, dataLength) => {
     let current = selectedPer;
